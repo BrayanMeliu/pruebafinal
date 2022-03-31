@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/mate.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="https://turismo.buenosaires.gob.ar/es/article/las-claves-para-preparar-un-mate" class="w3-button w3-block w3-black">PREPARACION</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="https://www.cosasnuestras.cl/tipos-de-yerba-mate-cual-elegir/" class="w3-button w3-block w3-black">TIPOS DE YERBAS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="https://www.quieromate.com.ar/tipos-de-mates/" class="w3-button w3-block w3-black">TIPOS DE MATES</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">El<br>Mate</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:800px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Acerca del Mate</span></h5>
+    <p><em> El Mate es una infusión hecha con hojas de yerba mate, planta originaria de las cuencas de los ríos de Argentina y Paraná. Estas plantas previamente secadas, cortadas y molidas forman la yerba mate, la cual tiene sabor amargo debido a los taninos de sus hojas.</em></p>
+    <p>Los CREADORES de este GRAN invento fueron los guaraníes, quienes habitaban el noreste del actual territorio de Argentina y gran parte de Paraguay y Brasil, quienes comenzaron a consumir las hojas de la planta de yeba mate, cuyo nombre científico es Ilex Paraguarensis Saint Hilaine.</p>
+    <img src="images/matemia1.jpeg" style="width:100%;max-width:1000px" class="#">
+    <p><strong>Si quieres matear algun dia...</strong> mi wsp es <em>+56976407371</em></p>
+    <p><strong>Enlace directo a mi wsp</strong> <a> https://api.whatsapp.com/send/?phone=56976407371&text&app_absent=0</a></p>
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Washipiteado desde <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu   (este scrip estaba con este template que copie pero como no tengo idea de js no sé que hace ni como afecta a la pagina asi que no se si es parte de algun div que borre o de los que permanecen, asi que lo conservare para evitar algun conflicto con la pagina)
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
